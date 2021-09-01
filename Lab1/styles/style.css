@@ -4,10 +4,13 @@ html{
 }
 
 body{
-    background-color: mediumorchid;
+    background-color:cornflowerblue;
     width: 700px;
     border: 3px solid mediumslateblue;
     padding: 0px 20px 20px 20px;
+}
+textarea{
+    resize: none;
 }
 
 h1{
@@ -17,15 +20,43 @@ h1{
     padding: 20px 0;
     color:salmon;
     text-shadow: 5px 5px 2px grey;
+    
 }
 
 img{
     display:block;
     margin:0 auto;
-    align: center;
+    align-self: center;
 }
 p{
     font-size: 24px;
     color:goldenrod;
-    text-align:center;
+    text-align:left;
+}
+table{
+    border: 1px solid grey;
+    background-color:khaki;
+}
+.question{
+    background-color:lemonchiffon;
+    color:black;
+    margin:20px;
+    padding:20px;
+}
+
+.block{
+    display:block;
+    width:100%;
+    border:burlywood;
+    background-color: blanchedalmond;
+    padding: 14px 28px;
+    font-size: 14px;
+    cursor:pointer;
+    text-align: center;
+}
+#signature{
+    text-align: right;
+    color:burlywood;
+    font-style:oblique;
+    font-size: 130%;
 }

@@ -7,47 +7,54 @@
     </head>
 
     <body>
-        <h1>Survey for Peeps</h1>
+        <h1>Survey Open To All</h1>
 
-        <p><i>Here is the ugliest site known to mankind!</i></p>
+        <p><i>Here is an interesting Site!</i></p>
 
-        <h2>What do you think of this <a href=https://www.canadiantire.ca/en/flyer.html>Canadian Tire</a> site?</h2>
+        <h2>What do you think of the <a href=https://www.canadiantire.ca/en/flyer.html>Canadian Tire</a> site?</h2>
         <br>
-        <img src="images/Canadian-Tire-Flyer.jpg" alt="Canadian Tire Flyer" style="width:700px;height:600px;";>
+        <img src="images/Canadian-Tire-Site.jfif" alt="Canadian Tire Site" style="width:700px;height:600px;";>
                     <br>
         <form action="index.php" name="myform" method="POST">
-            What is your name?<br>
-            <br>
-            Name:<input type="text" name="name"><br>
-            <br>
-            What is 2+2?<br>
-            <input type="radio" name="number" value="4">4<br>
-            <input type="radio" name="number" value="5">5<br>
-            <input type="radio" name="number" value="42">42<br>
-            <input type="radio" name="number" value="Not Sure">Not Sure<br>
-            <br>
-            What does the fox say?<br>
-            <select name= "favorite">
-                <option value="PINGPONGDINGDONG"selected="selected">PINGPONGDINGDONG</option>
-                <option value="RINGRINGRINGRING" >RINGRINGRINGRING</option>
-                <option value="DINGDINGDINGDING">DINGDINGDINGDING</option>
-                </select>
-            <br>
-            <br>
-            What fruits do you like:<br>
-            <input type="checkbox" name="Apples" value="Apples">Apples<br>
-            <input type="checkbox" name="Oranges" value="Oranges">Oranges<br>
-            <input type="checkbox" name="Bananas" value="Bananas">Bananas<br>
-            <br>
+            <div class="question">
+                What is your name?<br>
+                <br>
+                Name:<input type="text" name="name"><br>
+                <br>
+            </div>
+
+            <div class="question">
+                What is 2+2?<br>
+                <input type="radio" name="number" value="4">4<br>
+                <input type="radio" name="number" value="5">5<br>
+                <input type="radio" name="number" value="42">42<br>
+                <input type="radio" name="number" value="Not Sure">Not Sure<br>
+                <br>
+                What does the fox say?<br>
+                <select name= "favorite">
+                    <option value="PINGPONGDINGDONG"selected="selected">PINGPONGDINGDONG</option>
+                    <option value="RINGRINGRINGRING" >RINGRINGRINGRING</option>
+                    <option value="DINGDINGDINGDING">DINGDINGDINGDING</option>
+                    </select>
+                <br>
+                <br>
+                What fruits do you like:<br>
+                <input type="checkbox" name="Apples" value="Apples">Apples<br>
+                <input type="checkbox" name="Oranges" value="Oranges">Oranges<br>
+                <input type="checkbox" name="Bananas" value="Bananas">Bananas<br>
+                <br>
+            </div>
             
             Comments:<br>
             <textarea id="extra" name="extra" rows="5" cols="30" placeholder="Please write your comments here!"></textarea>
+            
             <br>
+
             <button id="submitButton" type="button" class="block">
                 Submit!
             </button>
 
-            <h5 style="text-align:right">Footer with Signature: Site created by Tommy Zhou</h5>
+            <h5 id="signature">Site created by Tommy Zhou</h5>
 
         </form>
     </body>
