@@ -1,10 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Title</title>
+        <meta charset="utf-8">
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <title>Lab1 Survey</title>
     </head>
+
     <body>
-        <h1> This is a Heading</h1>
-        <p> This is a paragraph.</p>
+        <h1>Survey for Peeps</h1>
+
+        <p><i>Here is the ugliest site known to mankind!</i></p>
+
+        <h2>What do you think of this <a href=https://www.canadiantire.ca/en/flyer.html>Canadian Tire</a> site?</h2>
+        <br>
+        <img src="https://ctcdigital.blob.core.windows.net/d0335/thumbnails/DE0335_01_0_Ott_Nfld_Wpg_CalGrp_Ed.jpg" alt="Canadiantire.ca" style="width:700px;height:600px;";>
+                    <br>
+        <form action="index.php" name="myform" method="POST">
+            What is your name?<br>
+            <br>
+            Name:<input type="text" name="name"><br>
+            <br>
+            What is 2+2?<br>
+            <input type="radio" name="number" value="4">4<br>
+            <input type="radio" name="number" value="5">5<br>
+            <input type="radio" name="number" value="42">42<br>
+            <input type="radio" name="number" value="Not Sure">Not Sure<br>
+            <br>
+            What does the fox say?<br>
+            <select name= "favorite">
+                <option value="PINGPONGDINGDONG"selected="selected">PINGPONGDINGDONG</option>
+                <option value="RINGRINGRINGRING" >RINGRINGRINGRING</option>
+                <option value="DINGDINGDINGDING">DINGDINGDINGDING</option>
+                </select>
+            <br>
+            <br>
+            What fruits do you like:<br>
+            <input type="checkbox" name="Apples" value="Apples">Apples<br>
+            <input type="checkbox" name="Oranges" value="Oranges">Oranges<br>
+            <input type="checkbox" name="Bananas" value="Bananas">Bananas<br>
+            <br>
+            
+            Comments:<br>
+            <textarea id="extra" name="extra" rows="5" cols="30" placeholder="Please write your comments here!"></textarea>
+            <br>
+            <button id="submitButton" type="button" class="block">
+                Submit!
+            </button>
+
+            <h5 style="text-align:right">Footer with Signature: Site created by Tommy Zhou</h5>
+
+        </form>
     </body>
 </html>
