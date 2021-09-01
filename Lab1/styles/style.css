@@ -1,0 +1,31 @@
+/* A Style sheet for Lab 1*/
+html{
+    background-color: whitesmoke;
+}
+
+body{
+    background-color: mediumorchid;
+    width: 700px;
+    border: 3px solid mediumslateblue;
+    padding: 0px 20px 20px 20px;
+}
+
+h1{
+    font-size: 70px;
+    text-align:center;
+    margin:0;
+    padding: 20px 0;
+    color:salmon;
+    text-shadow: 5px 5px 2px grey;
+}
+
+img{
+    display:block;
+    margin:0 auto;
+    align: center;
+}
+p{
+    font-size: 24px;
+    color:goldenrod;
+    text-align:center;
+}
