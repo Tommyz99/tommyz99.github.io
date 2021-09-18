@@ -3,22 +3,64 @@
 
 var products = [
 	{
-		name: "brocoli",
-		vegetarian: true,
-		glutenFree: true,
+		name: "milk",
+		lactose_intolerant: false,
+		nut_allergy: true,
 		price: 1.99
 	},
 	{
-		name: "bread",
-		vegetarian: true,
-		glutenFree: false,
+		name: "soy milk",
+		lactose_intolerant: true,
+		nut_allergy: true,
 		price: 2.35
 	},
 	{
-		name: "salmon",
-		vegetarian: false,
-		glutenFree: true,
-		price: 10.00
+		name: "almond milk",
+		lactose_intolerant: true,
+		nut_allergy: false,
+		price: 3.00
+	},
+	{
+		name: "beef",
+		lactose_intolerant: true,
+		nut_allergy: true,
+		price: 15.00
+	},
+	{
+		name: "chicken",
+		lactose_intolerant: true,
+		nut_allergy: true,
+		price: 12.00
+	},
+	{
+		name: "cheddar",
+		lactose_intolerant: false,
+		nut_allergy: true,
+		price: 1.50
+	},
+	{
+		name: "pecan pie",
+		lactose_intolerant: true,
+		nut_allergy: false,
+		price: 6.00
+	},
+	{
+		name: "lasagna",
+		lactose_intolerant: false,
+		nut_allergy: true,
+		price: 10.25
+	},
+	{
+		name: "quinoa",
+		lactose_intolerant: true,
+		nut_allergy: true,
+		price: 5.00
+	},
+	{
+		name: "brown rice",
+		lactose_intolerant: true,
+		nut_allergy: true,
+		price: 2.00
 	}
 ];
 	
@@ -30,10 +72,10 @@ var products = [
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+		if ((restriction == "Lactose-Intolerant") && (prods[i].lactose_intolerant == true)){
 			product_names.push(prods[i].name);
 		}
-		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+		else if ((restriction == "Nut Allergy") && (prods[i].nut_allergy == true)){
 			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){
@@ -51,5 +93,6 @@ function getTotalPrice(chosenProducts) {
 			totalPrice += products[i].price;
 		}
 	}
-	return totalPrice;
+	var roundedPrice = totalPrice.toFixed(2);
+	return roundedPrice;
 }
